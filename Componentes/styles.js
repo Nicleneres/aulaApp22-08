@@ -14,7 +14,13 @@ const estilo = StyleSheet.create({
   },  
   texto: {
     textAlign: "center"
-  }
+  },
+  imagem:{
+    paddingTop: 400,
+    width: 400,
+    height: 600,
+    resizeMode: 'stretch'
+  }  
 });
 
 export default estilo;

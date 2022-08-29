@@ -2,10 +2,12 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 // import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import telaHom from './Componentes/TelaHome';
-import telaDescricao from './Componentes/TelaDescricao';
-import telaBiblioteca from './Componentes/TelaBiblioteca';
-import telaRota from './Componentes/TelaRotas';
+import TelaBulbasaur from './Componentes/Bulbasaur';
+import TelaPikachu from './Componentes/Pikachu';
+import TelaCharmander from './Componentes/Charmander';
+import TelaPidgeot from './Componentes/Pidgeot';
+import TelaRattata from './Componentes/Rattata';
+
 
 const Drawer = createDrawerNavigator();
 // const BottomTab = createBottomTabNavigator();
@@ -14,10 +16,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Drawer.Navigator>
-        <Drawer.Screen name='Home' component={telaHom}/>
-        <Drawer.Screen name='Descrição' component={telaDescricao}/>
-        <Drawer.Screen name='Biblioteca' component={telaBiblioteca}/>
-        <Drawer.Screen name='Rota' component={telaRota}/>
+        <Drawer.Screen name='Bulbasaur' component={TelaBulbasaur}/>
+        <Drawer.Screen name='Pikachu' component={TelaPikachu}/>
+        <Drawer.Screen name='Charmander' component={TelaCharmander}/>
+        <Drawer.Screen name='Pidgeot' component={TelaPidgeot}/>
+        <Drawer.Screen name='Rattata' component={TelaRattata}/>
+        
       </Drawer.Navigator>
 
       {/* <BottomTab.Navigator>
